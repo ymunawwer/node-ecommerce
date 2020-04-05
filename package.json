@@ -3,21 +3,33 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "mocha"
   },
   "dependencies": {
     "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
     "chai": "^4.2.0",
     "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
     "express": "~4.16.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.4.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
     "mocha": "^6.1.4",
     "mongoose": "^5.5.12",
     "morgan": "~1.9.1",
     "nodemon": "^1.19.1",
-    "passport": "^0.4.0"
+    "passport": "^0.4.0",
+    "passport-custom": "^1.1.1",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.5.0"
+  },
+  "devDependencies": {
+    "debug": "^2.6.9",
+    "node-inspect": "^1.11.6"
   }
-
 }
